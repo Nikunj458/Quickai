@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { dummyCreationData } from '../assets/assets';
-import { GemIcon, Sparkles } from 'lucide-react';
-import { Protect, useAuth } from '@clerk/clerk-react';
+import { Sparkles } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 import CreationItem from '../components/CreationItem';
 import axios from 'axios'
 import toast from 'react-hot-toast';
@@ -50,17 +49,14 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Active Plan Card */}
-
         <div className='flex justify-between items-center w-72 p-4 px-6 bg-white dark:bg-dark-card
         border border-gray-200 dark:border-dark-border rounded-xl'>
           <div className='text-slate-600 dark:text-dark-text-secondary'>
-            <p className='text-sm'>Active Plan</p>
-            <h2 className='text-xl font-semibold text-gray-900 dark:text-dark-text'><Protect plan='premium' fallback='Free' className>
-              Premium</Protect></h2>
+            <p className='text-sm'>Access</p>
+            <h2 className='text-xl font-semibold text-gray-900 dark:text-dark-text'>All tools</h2>
           </div>
           <div className='w-10 h-10 rounded-lg bg-gradient-to-br from-[#FF61C5] to-[#9E53EE] text-white flex justify-center items-center'>
-            <GemIcon className='w-5 text-white'/>
+            <Sparkles className='w-5 text-white'/>
           </div>
 
         </div>

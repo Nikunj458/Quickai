@@ -10,7 +10,7 @@ const Footer = () => {
             <img className="h-9" src={assets.logo} alt="logo" />
             <p className="mt-6 text-sm" >
                 Experience the power of AI with QuickAi. <br />
-                Transform your content creation with our suite of premium AI tools. Write articles,
+                Transform your content creation with our complete suite of AI tools. Write articles,
                 generate images, and enhance your workflow.
             </p>
         </div>

@@ -1,6 +1,6 @@
 import { Edit, Hash, Image, Sparkles } from 'lucide-react'
 import React, { useState } from 'react'
-import { useAuth } from '@clerk/clerk-react';
+import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
 import Markdown from 'react-markdown';
 import axios from 'axios'

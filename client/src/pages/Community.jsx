@@ -1,6 +1,5 @@
-import { useAuth, useUser } from '@clerk/clerk-react';
+import { useAuth, useUser } from '../context/AuthContext';
 import React, { useEffect, useState } from 'react'
-import { dummyPublishedCreationData } from '../assets/assets';
 import { Heart } from 'lucide-react';
 import axios from 'axios'
 import toast from 'react-hot-toast';

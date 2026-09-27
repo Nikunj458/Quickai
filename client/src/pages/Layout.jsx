@@ -3,7 +3,7 @@ import { Outlet, useNavigate  } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { Menu, X } from 'lucide-react'; // Removed Sidebar import
 import { useState } from 'react';
-import { SignIn, useUser } from '@clerk/clerk-react';
+import { useUser } from '../context/AuthContext';
 import Sidebar from '../components/Sidebar'; // Import your custom Sidebar component
 
 const Layout = () => {
@@ -31,11 +31,7 @@ const Layout = () => {
       
     </div>
   ) :
-  (
-    <div className='flex items-center justify-center h-screen'>
-      <SignIn/>
-    </div>
-  )
+    <div className='flex items-center justify-center h-screen text-slate-500'>Please sign in from the home page to access the workspace.</div>
 }
 
 export default Layout
